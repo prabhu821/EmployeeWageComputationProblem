@@ -10,7 +10,8 @@
             while (flag)
             {
                 Console.WriteLine("\nSelect the option");
-                Console.WriteLine("1.Attendance \n2.Daily Employee Wage \n3.Part Time Employee Wage \n4.Switch Case Statement \n5.Exit");
+                Console.WriteLine("1.Attendance \n2.Daily Employee Wage \n3.Part Time Employee Wage \n4.Switch Case Statement " +
+                    "\n5.Monthly Wages \n6.Exit");
                 int check = Convert.ToInt32(Console.ReadLine());
                 switch (check)
                 {
@@ -25,6 +26,9 @@
                         break;
                     case 4:
                         employeeWage.SwitchCase();
+                        break;
+                    case 5:
+                        employeeWage.MonthlyWage();
                         break;
                     default:
                         flag = false;
